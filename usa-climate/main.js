@@ -1,6 +1,6 @@
 
 grist.ready();
-grist.onRecords(table => {
-  content = document.getElementById("app")
+grist.onRecord(table => {
+  content = document.getElementById("app").innerHTML = "coucou"
   content.innerHTML = "coucou"
 })
