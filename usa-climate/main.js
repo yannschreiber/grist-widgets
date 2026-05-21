@@ -1,5 +1,5 @@
 
 grist.ready();
-grist.onRecord(table => {
-  content = document.getElementById("app").innerHTML = "coucou"
+grist.onRecord(record => {
+  document.getElementById("app").innerHTML = JSON.stringify(record, null, 2);
 })
