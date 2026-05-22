@@ -1,0 +1,1 @@
+declare const grist: typeof import("grist-plugin-api.GristPlugin");

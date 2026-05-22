@@ -1,6 +1,6 @@
 let allRecords = [];
 
-grist.ready({requiredAccess: 'read table'});
+grist.ready({ requiredAccess: "read table" });
 
 grist.onRecords(function (records, mappings) {
   allRecords = grist.mapColumnNames(records, mappings) || [];
@@ -37,7 +37,8 @@ function updateDisplay() {
   const id = Number(select.value);
 
   if (!id) {
-    display.innerHTML = "";
+    display.innerHTML = `Bienvenue sur le dashboard des températures aux Etats-Unis.<br>
+    Pour chaque ville, vous trouverez ci-dessous des paragraphes de contexte utilisables dans la copie.`;
     return;
   }
 
