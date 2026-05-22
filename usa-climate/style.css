@@ -1,0 +1,15 @@
+.container {
+  padding: 1em;
+  font: 1rem sans-serif;
+}
+.content {
+  max-width: 80%;
+  min-height: 60px;
+  white-space: pre-wrap;  /* preserves line breaks in the text field */
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.city {
+  font-size: xx-large;
+  padding-bottom: 0.5em;
+}

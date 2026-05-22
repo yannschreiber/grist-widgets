@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temperature widget</title>
-  <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
-</head>
-<body>
-  <div id="app">
-    <!-- Your widget UI goes here -->
-    <p id="output">Chargement...</p>
-  </div>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature widget</title>
+    <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="container">
+      <select id="city-select" class="form-select mb-3">
+        <option value="">— Select a city —</option>
+      </select>
+      <!-- Your widget UI goes here -->
+      <div id="output">Chargement...</div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
